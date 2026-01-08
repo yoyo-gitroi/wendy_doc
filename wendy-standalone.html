@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Wendy - Mental Wellness Infrastructure</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+            background-color: #f0f0f0;
+        }
+
+
+
+        .slide {
+            width: 1280px;
+            height: 720px;
+            margin: 20px auto;
+            page-break-after: always;
+            page-break-inside: avoid;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #content {
+            background-color: #f0f0f0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media print {
+
+
+            .slide {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+
+            body {
+                background-color: white;
+            }
+        }
+
+        @page {
+            size: 1280px 720px landscape;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="content">
+        <!-- Slide 1: Cover -->
+        <div class="slide"
+            style="background-color: #F5F5F0; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative;">
+            <div
+                style="position: absolute; width: 384px; height: 384px; background-color: #9CAF88; opacity: 0.1; border-radius: 50%; top: 0; right: 0; transform: translate(33%, -33%);">
+            </div>
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #D4735E; opacity: 0.1; border-radius: 50%; bottom: 0; left: 0; transform: translate(-25%, 25%);">
+            </div>
+
+            <div style="position: relative; z-index: 10; text-align: center; max-width: 900px; padding: 0 32px;">
+                <div style="margin-bottom: 24px;">
+                    <div
+                        style="width: 64px; height: 64px; border-radius: 50%; background-color: #E8EDE4; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    </div>
+                </div>
+                <p
+                    style="color: #D4735E; font-size: 24px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px;">
+                    Project Wendy
+                </p>
+                <h1
+                    style="font-size: 60px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 32px;">
+                    Mental Wellness Infrastructure<br>
+                    <span style="color: #A8A29E; font-style: italic;">for India's Founders</span>
+                </h1>
+                <div
+                    style="width: 96px; height: 4px; background-color: #D4735E; opacity: 0.6; border-radius: 2px; margin: 0 auto 32px;">
+                </div>
+                <p style="font-size: 20px; color: #6B7280; font-weight: 300; line-height: 1.8; margin-bottom: 48px;">
+                    Building the emotional infrastructure India's startup ecosystem is missing.
+                </p>
+                <div
+                    style="display: flex; align-items: center; justify-content: center; gap: 32px; font-size: 20px; font-weight: 500; color: #9CAF88;">
+                    <span>Content</span>
+                    <div style="width: 8px; height: 8px; background-color: #D4735E; opacity: 0.6; border-radius: 50%;">
+                    </div>
+                    <span>Community</span>
+                    <div style="width: 8px; height: 8px; background-color: #D4735E; opacity: 0.6; border-radius: 50%;">
+                    </div>
+                    <span>Care</span>
+                </div>
+            </div>
+
+            <div
+                style="position: absolute; bottom: 32px; right: 48px; color: #9CA3AF; font-size: 14px; font-weight: 300;">
+                2026
+            </div>
+        </div>
+
+        <!-- Slide 2: The Reality -->
+        <div class="slide" style="background-color: #F5F5F0; display: flex;">
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #9CAF88; opacity: 0.1; border-radius: 50%; top: 0; left: 0; transform: translate(-33%, -33%);">
+            </div>
+
+            <div
+                style="width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 64px; position: relative; z-index: 10;">
+                <p
+                    style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                    The Reality
+                </p>
+                <h2
+                    style="font-size: 48px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 32px;">
+                    Building at speed,<br>
+                    <span style="color: #D4735E; font-style: italic;">breaking the builders.</span>
+                </h2>
+                <div style="font-size: 20px; font-weight: 300; color: #374151; line-height: 1.8;">
+                    <p style="margin-bottom: 24px;">
+                        India's startup ecosystem has learned to build companies at speed.
+                    </p>
+                    <p style="font-weight: 500; color: #4A4A4A; margin-bottom: 24px;">
+                        It has not learned to take care of the humans building them.
+                    </p>
+                    <div
+                        style="padding-top: 16px; border-left: 4px solid #9CAF88; padding-left: 24px; margin-top: 16px;">
+                        <p style="font-style: italic; color: #6B7280;">
+                            "The pressure is constant. The stakes are existential. The weight compounds daily."
+                        </p>
+                    </div>
+                </div>
+                <div
+                    style="margin-top: 48px; display: flex; align-items: center; gap: 16px; color: #A8A29E; font-size: 14px;">
+                    <div style="height: 1px; width: 48px; background-color: #A8A29E;"></div>
+                    <p>FOUNDER WELLNESS CRISIS</p>
+                </div>
+            </div>
+
+            <div
+                style="width: 55%; background-color: white; display: flex; align-items: center; justify-content: center; padding: 32px;">
+                <img src="public/images/contemplation.jpg" alt="The Reality"
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Slide 3: The Invisible Cage -->
+        <div class="slide" style="background-color: #F5F5F0; display: flex;">
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #D4735E; opacity: 0.1; border-radius: 50%; bottom: 0; right: 0; transform: translate(33%, 33%);">
+            </div>
+
+            <div
+                style="width: 55%; background-color: white; border-right: 1px solid #F3F4F6; display: flex; align-items: center; justify-content: center;">
+                <img src="public/images/invisible-cage.jpg" alt="The Invisible Cage"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <div
+                style="width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 64px 0 48px; position: relative; z-index: 10;">
+                <p
+                    style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px;">
+                    The Invisible Cage
+                </p>
+                <h2
+                    style="font-size: 36px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 8px;">
+                    You are not alone<br>
+                    <span style="color: #A8A29E; font-style: italic;">in feeling alone.</span>
+                </h2>
+
+                <div style="margin-top: 24px; margin-bottom: 32px;">
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Loneliness despite constant
+                            interaction</p>
+                    </div>
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Chronic anxiety beneath outward
+                            success</p>
+                    </div>
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Identity collapse when the company
+                            struggles</p>
+                    </div>
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">The belief that vulnerability
+                            equals weakness</p>
+                    </div>
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Imposter syndrome mixed with
+                            messiah complex</p>
+                    </div>
+                </div>
+
+                <div style="padding-top: 24px; border-top: 1px solid rgba(156, 175, 136, 0.3);">
+                    <p style="font-size: 16px; font-weight: 500; color: #4A4A4A; margin-bottom: 4px;">
+                        This is not a fringe issue. It is structural.
+                    </p>
+                    <p style="font-size: 16px; color: #6B7280; font-weight: 300; font-style: italic; line-height: 1.6;">
+                        The ecosystem extracts extraordinary effort without offering the emotional infrastructure to
+                        sustain it.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Solution -->
+        <div class="slide"
+            style="background-color: #F5F5F0; padding: 64px; display: flex; flex-direction: column; position: relative;">
+            <div
+                style="position: absolute; width: 320px; height: 320px; background-color: #9CAF88; opacity: 0.1; border-radius: 50%; top: 0; right: 0; transform: translate(25%, -25%);">
+            </div>
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #D4735E; opacity: 0.1; border-radius: 50%; bottom: 0; left: 0; transform: translate(-25%, 25%);">
+            </div>
+
+            <div style="text-align: center; margin-bottom: 40px; position: relative; z-index: 10;">
+                <div
+                    style="margin-bottom: 12px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <p
+                        style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;">
+                        The Solution
+                    </p>
+                </div>
+                <h2
+                    style="font-size: 48px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2;">
+                    Wellness as <span style="color: #A8A29E; font-style: italic;">Shared Infrastructure</span>,<br>
+                    not a Private Burden.
+                </h2>
+            </div>
+
+            <div style="flex: 1; display: flex; gap: 32px; position: relative; z-index: 10; margin-top: 8px;">
+                <!-- Pillar 1: Content -->
+                <div
+                    style="flex: 1; background-color: white; padding: 32px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 4px solid #9CAF88; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <div
+                        style="width: 64px; height: 64px; background-color: rgba(156, 175, 136, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="#9CAF88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 24px; font-family: 'Lora', serif; color: #4A4A4A; margin-bottom: 12px;">
+                        Content</h3>
+                    <div
+                        style="width: 48px; height: 2px; background-color: #9CAF88; opacity: 0.5; margin-bottom: 20px;">
+                    </div>
+                    <p style="color: #6B7280; font-weight: 300; line-height: 1.6; margin-bottom: 16px; flex: 1;">
+                        Stories that create permission to be human. Making vulnerability visible through YouTube,
+                        podcasts, and essays.
+                    </p>
+                    <div
+                        style="margin-top: auto; padding-top: 16px; font-size: 14px; color: #9CAF88; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">
+                        Normalization</div>
+                </div>
+
+                <!-- Pillar 2: Community -->
+                <div
+                    style="flex: 1; background-color: white; padding: 32px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 4px solid #D4735E; transform: translateY(-16px); display: flex; flex-direction: column; align-items: center; text-align: center; position: relative;">
+                    <div
+                        style="position: absolute; top: -12px; background-color: #D4735E; color: white; font-size: 12px; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                        Core</div>
+                    <div
+                        style="width: 64px; height: 64px; background-color: rgba(212, 115, 94, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="#D4735E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 24px; font-family: 'Lora', serif; color: #4A4A4A; margin-bottom: 12px;">
+                        Community</h3>
+                    <div
+                        style="width: 48px; height: 2px; background-color: #D4735E; opacity: 0.5; margin-bottom: 20px;">
+                    </div>
+                    <p style="color: #6B7280; font-weight: 300; line-height: 1.6; margin-bottom: 16px; flex: 1;">
+                        <strong>Founder Forums:</strong> Small, facilitated peer circles where you can stop performing
+                        and start processing in psychological safety.
+                    </p>
+                    <div
+                        style="margin-top: auto; padding-top: 16px; font-size: 14px; color: #D4735E; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">
+                        Connection</div>
+                </div>
+
+                <!-- Pillar 3: Care -->
+                <div
+                    style="flex: 1; background-color: white; padding: 32px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 4px solid #A8A29E; display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <div
+                        style="width: 64px; height: 64px; background-color: rgba(168, 162, 158, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="#A8A29E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 24px; font-family: 'Lora', serif; color: #4A4A4A; margin-bottom: 12px;">Care
+                    </h3>
+                    <div
+                        style="width: 48px; height: 2px; background-color: #A8A29E; opacity: 0.5; margin-bottom: 20px;">
+                    </div>
+                    <p style="color: #6B7280; font-weight: 300; line-height: 1.6; margin-bottom: 16px; flex: 1;">
+                        Access to therapists who understand identity fusion, prolonged uncertainty, and founder
+                        psychology.
+                    </p>
+                    <div
+                        style="margin-top: auto; padding-top: 16px; font-size: 14px; color: #A8A29E; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;">
+                        Intervention</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center; position: relative; z-index: 10;">
+                <p style="color: #6B7280; font-weight: 300; font-style: italic; font-size: 14px;">
+                    Wendy exists to change the structural default of the ecosystem.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 5: Content Pillar -->
+        <div class="slide" style="background-color: #F5F5F0; display: flex; position: relative;">
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #D4735E; opacity: 0.1; border-radius: 50%; top: 0; left: 0; transform: translate(-33%, -33%);">
+            </div>
+
+            <div
+                style="width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 64px; position: relative; z-index: 10;">
+                <p
+                    style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                    Pillar 1: Content
+                </p>
+                <h2
+                    style="font-size: 48px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 24px;">
+                    Make Vulnerability<br>
+                    <span style="color: #9CAF88; font-style: italic;">Visible</span>
+                </h2>
+                <div style="margin-bottom: 24px;">
+                    <p style="font-size: 20px; color: #4A4A4A; font-weight: 400; margin-bottom: 16px;">
+                        Stories that create permission to be human.
+                    </p>
+                    <div style="display: flex; flex-direction: column; gap: 12px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background-color: #E8EDE4; display: flex; align-items: center; justify-content: center;">
+                            </div>
+                            <p style="margin: 0; font-size: 18px; color: #374151;">YouTube</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background-color: #E8EDE4; display: flex; align-items: center; justify-content: center;">
+                            </div>
+                            <p style="margin: 0; font-size: 18px; color: #374151;">Podcasts</p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 32px; height: 32px; border-radius: 50%; background-color: #E8EDE4; display: flex; align-items: center; justify-content: center;">
+                            </div>
+                            <p style="margin: 0; font-size: 18px; color: #374151;">Essays</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-top: 16px; border-left: 4px solid #9CAF88; padding-left: 24px;">
+                    <p style="font-style: italic; color: #6B7280; font-size: 16px; line-height: 1.6;">
+                        Goal: Normalize emotional literacy; shift culture from performance to processing.
+                    </p>
+                </div>
+                <div
+                    style="margin-top: 40px; display: flex; align-items: center; gap: 16px; color: #A8A29E; font-size: 12px;">
+                    <div style="height: 1px; width: 48px; background-color: #A8A29E;"></div>
+                    <p>SHARED INFRASTRUCTURE</p>
+                </div>
+            </div>
+
+            <div
+                style="width: 55%; background-color: white; display: flex; align-items: center; justify-content: center; padding: 32px;">
+                <img src="public/images/kintsugi-vessel.jpg" alt="Content: Kintsugi - Strength in Healing"
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Slide 6: Community Pillar -->
+        <div class="slide" style="background-color: #F5F5F0; display: flex; position: relative;">
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #D4735E; opacity: 0.1; border-radius: 50%; bottom: 0; right: 0; transform: translate(33%, 33%);">
+            </div>
+
+            <div
+                style="width: 55%; background-color: white; border-right: 1px solid #F3F4F6; display: flex; align-items: center; justify-content: center;">
+                <img src="public/images/community-circle.jpg" alt="Community: Connection & Peer Equality"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <div
+                style="width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 64px 0 48px; position: relative; z-index: 10;">
+                <p
+                    style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+                    Community
+                </p>
+                <h2
+                    style="font-size: 36px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 8px;">
+                    Founder Forums<br>
+                    <span style="color: #A8A29E; font-style: italic;">Circles of shared truth.</span>
+                </h2>
+
+                <div style="margin-top: 16px; margin-bottom: 24px;">
+                    <p style="font-size: 18px; color: #374151; font-weight: 300; line-height: 1.6;">
+                        Small, consistent circles of founders meeting regularly in confidential, facilitated settings.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 32px;">
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Psychological safety to stop
+                            performing</p>
+                    </div>
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Shared truth without judgment</p>
+                    </div>
+                    <div style="position: relative; padding-left: 24px; margin-bottom: 12px;">
+                        <span style="position: absolute; left: 0; color: #D4735E; font-weight: bold;">→</span>
+                        <p style="font-size: 18px; color: #374151; font-weight: 300;">Continuity of care and support</p>
+                    </div>
+                </div>
+
+                <div style="padding-top: 24px; border-top: 1px solid rgba(156, 175, 136, 0.3);">
+                    <p style="font-size: 16px; font-weight: 500; color: #4A4A4A; margin-bottom: 4px;">
+                        This isn't just networking.
+                    </p>
+                    <p style="font-size: 16px; color: #6B7280; font-weight: 300; font-style: italic; line-height: 1.6;">
+                        It's a place where founders can stop performing and start processing the reality of building.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Care Pillar -->
+        <div class="slide" style="background-color: #F5F5F0; display: flex; position: relative;">
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #9CAF88; opacity: 0.1; border-radius: 50%; top: 0; left: 0; transform: translate(-33%, -33%);">
+            </div>
+
+            <div
+                style="width: 45%; display: flex; flex-direction: column; justify-content: center; padding: 0 64px; position: relative; z-index: 10;">
+                <p
+                    style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                    The Solution: Care
+                </p>
+                <h2
+                    style="font-size: 36px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 24px;">
+                    Support that understands<br>
+                    <span style="color: #D4735E; font-style: italic;">your reality.</span>
+                </h2>
+                <div style="font-size: 18px; font-weight: 300; color: #374151; line-height: 1.6; margin-bottom: 24px;">
+                    <p>
+                        Access to therapists trained in the specific psychology of entrepreneurship.
+                    </p>
+                </div>
+
+                <div>
+                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+                        <div style="margin-top: 4px; color: #9CAF88;">✓</div>
+                        <div>
+                            <p style="color: #374151; font-weight: 500; font-size: 16px;">Identity fusion</p>
+                            <p style="font-size: 14px; color: #A8A29E; font-weight: 300; font-style: italic;">When you
+                                are the company</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+                        <div style="margin-top: 4px; color: #9CAF88;">✓</div>
+                        <p style="color: #374151; font-weight: 400; font-size: 16px;">Prolonged uncertainty & decision
+                            fatigue</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+                        <div style="margin-top: 4px; color: #9CAF88;">✓</div>
+                        <p style="color: #374151; font-weight: 400; font-size: 16px;">Performance pressure & visibility
+                        </p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+                        <div style="margin-top: 4px; color: #9CAF88;">✓</div>
+                        <p style="color: #374151; font-weight: 400; font-size: 16px;">Isolation despite being surrounded
+                            by people</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+                        <div style="margin-top: 4px; color: #9CAF88;">✓</div>
+                        <p style="color: #374151; font-weight: 400; font-size: 16px;">The weight of other people's
+                            livelihoods</p>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 32px; display: flex; align-items: center; gap: 16px; color: #A8A29E; font-size: 12px;">
+                    <div style="height: 1px; width: 48px; background-color: #A8A29E;"></div>
+                    <p>PROFESSIONAL CARE INFRASTRUCTURE</p>
+                </div>
+            </div>
+
+            <div
+                style="width: 55%; background-color: white; display: flex; align-items: center; justify-content: center; padding: 32px;">
+                <img src="public/images/lighthouse-guidance.jpg" alt="Care: Guidance in Uncertainty"
+                    style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </div>
+        </div>
+
+        <!-- Slide 8: The Missing Layer -->
+        <div class="slide"
+            style="background-color: #F5F5F0; padding: 32px 48px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; position: relative;">
+            <div
+                style="position: absolute; width: 384px; height: 384px; background-color: #A8A29E; opacity: 0.1; border-radius: 50%; top: 0; left: 0; transform: translate(-50%, -50%);">
+            </div>
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #9CAF88; opacity: 0.1; border-radius: 50%; bottom: 0; right: 0; transform: translate(33%, 33%);">
+            </div>
+
+            <div style="width: 100%; z-index: 10; text-align: center; margin-top: 16px;">
+                <div style="margin-bottom: 8px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <p
+                        style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;">
+                        The Missing Layer
+                    </p>
+                </div>
+                <h2
+                    style="font-size: 36px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2;">
+                    Emotional Infrastructure
+                </h2>
+            </div>
+
+            <div
+                style="flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; position: relative; z-index: 10; padding: 0 64px; max-height: 320px;">
+                <div style="height: 100%; width: auto; max-width: 1000px; position: relative;">
+                    <img src="public/images/building-foundation.jpg"
+                        alt="Building Cross-Section: Emotional Support as Foundation"
+                        style="height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.05)); border-radius: 4px;">
+                </div>
+            </div>
+
+            <div
+                style="text-align: center; max-width: 900px; z-index: 10; margin-bottom: 32px; background-color: rgba(255, 255, 255, 0.6); padding: 24px; border-radius: 12px; border: 1px solid white; backdrop-filter: blur(4px); box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <h3 style="font-size: 24px; font-family: 'Lora', serif; color: #4A4A4A; margin-bottom: 12px;">
+                    Wellness is not the penthouse; <span style="color: #9CAF88; font-style: italic;">it's the
+                        foundation.</span>
+                </h3>
+                <div style="width: 64px; height: 2px; background-color: #A8A29E; opacity: 0.4; margin: 0 auto 16px;">
+                </div>
+                <p style="font-size: 18px; color: #6B7280; font-weight: 300; line-height: 1.6;">
+                    Peer forums and clinical care underpin execution, strategy, and leadership.<br>
+                    <span style="font-weight: 500; color: #D4735E;">Build the basement first—support flows
+                        upward.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 9: The Ecosystem Vision -->
+        <div class="slide"
+            style="background-color: #F5F5F0; padding: 32px 48px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; position: relative;">
+            <div
+                style="position: absolute; width: 384px; height: 384px; background-color: #A8A29E; opacity: 0.1; border-radius: 50%; top: 0; left: 0; transform: translate(-50%, -50%);">
+            </div>
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #9CAF88; opacity: 0.1; border-radius: 50%; bottom: 0; right: 0; transform: translate(33%, 33%);">
+            </div>
+
+            <div style="width: 100%; z-index: 10; text-align: center; margin-top: 16px;">
+                <div style="margin-bottom: 8px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <p
+                        style="color: #D4735E; font-size: 18px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;">
+                        The Ecosystem Vision
+                    </p>
+                </div>
+                <h2
+                    style="font-size: 36px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2;">
+                    An Ecosystem Where Emotional Resilience Is Infrastructure
+                </h2>
+            </div>
+
+            <div
+                style="flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; position: relative; z-index: 10; padding: 0 64px; max-height: 320px;">
+                <div style="height: 100%; width: auto; max-width: 1000px; position: relative;">
+                    <img src="public/images/ecosystem-tree.jpg" alt="Tree with Root System: Hidden Foundation of Growth"
+                        style="height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.05)); border-radius: 4px;">
+                    <!-- Floating Labels -->
+                    <div
+                        style="position: absolute; bottom: 25%; left: -200px; display: flex; align-items: center; justify-content: flex-end; width: 180px;">
+                        <div style="text-align: right; margin-right: 12px;">
+                            <p
+                                style="color: #9CAF88; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em;">
+                                The Roots</p>
+                            <p style="font-size: 12px; color: #6B7280; font-weight: 300;">Emotional Literacy & Support
+                            </p>
+                        </div>
+                        <div style="width: 48px; height: 1px; background-color: #9CAF88;"></div>
+                        <div
+                            style="width: 8px; height: 8px; border-radius: 50%; background-color: #9CAF88; margin-left: -4px;">
+                        </div>
+                    </div>
+                    <div
+                        style="position: absolute; top: 25%; right: -200px; display: flex; align-items: center; width: 180px;">
+                        <div
+                            style="width: 8px; height: 8px; border-radius: 50%; background-color: #D4735E; margin-right: -4px;">
+                        </div>
+                        <div style="width: 48px; height: 1px; background-color: #D4735E;"></div>
+                        <div style="text-align: left; margin-left: 12px;">
+                            <p
+                                style="color: #D4735E; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em;">
+                                The Canopy</p>
+                            <p style="font-size: 12px; color: #6B7280; font-weight: 300;">Sustainable Growth & Success
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="text-align: center; max-width: 1000px; z-index: 10; margin-bottom: 24px; background-color: rgba(255, 255, 255, 0.6); padding: 24px; border-radius: 12px; border: 1px solid white; backdrop-filter: blur(4px); box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: center;">
+                    <div style="border-right: 1px solid #E5E7EB; padding-right: 8px;">
+                        <p
+                            style="color: #D4735E; font-weight: 500; margin-bottom: 4px; font-family: 'Lora', serif; font-size: 18px;">
+                            Normalized</p>
+                        <p style="font-size: 14px; color: #6B7280; font-weight: 300; line-height: 1.4;">Peer forums are
+                            as standard as board meetings.</p>
+                    </div>
+                    <div style="border-right: 1px solid #E5E7EB; padding-right: 8px;">
+                        <p
+                            style="color: #D4735E; font-weight: 500; margin-bottom: 4px; font-family: 'Lora', serif; font-size: 18px;">
+                            Leadership</p>
+                        <p style="font-size: 14px; color: #6B7280; font-weight: 300; line-height: 1.4;">Seeking support
+                            is seen as strength, not weakness.</p>
+                    </div>
+                    <div style="padding-left: 8px;">
+                        <p
+                            style="color: #D4735E; font-weight: 500; margin-bottom: 4px; font-family: 'Lora', serif; font-size: 18px;">
+                            Advantage</p>
+                        <p style="font-size: 14px; color: #6B7280; font-weight: 300; line-height: 1.4;">Emotional
+                            literacy becomes a competitive edge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Join Us -->
+        <div class="slide"
+            style="background-color: #F5F5F0; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative;">
+            <div
+                style="position: absolute; width: 100%; height: 384px; background-color: #9CAF88; opacity: 0.05; border-radius: 50%; top: 0; left: 0; transform: translateY(-50%);">
+            </div>
+            <div
+                style="position: absolute; width: 384px; height: 384px; background-color: #D4735E; opacity: 0.1; border-radius: 50%; bottom: 0; right: 0; transform: translate(33%, 33%);">
+            </div>
+            <div
+                style="position: absolute; width: 256px; height: 256px; background-color: #A8A29E; opacity: 0.1; border-radius: 50%; bottom: 0; left: 0; transform: translate(-33%, 33%);">
+            </div>
+
+            <div
+                style="position: relative; z-index: 10; text-align: center; max-width: 900px; padding: 0 32px; display: flex; flex-direction: column; align-items: center;">
+                <div style="margin-bottom: 24px;">
+                    <div
+                        style="width: 64px; height: 64px; border-radius: 50%; background-color: #E8EDE4; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+                    </div>
+                    <p
+                        style="color: #D4735E; font-size: 20px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;">
+                        Join Us
+                    </p>
+                </div>
+
+                <h2
+                    style="font-size: 48px; font-family: 'Lora', serif; color: #4A4A4A; font-weight: 500; line-height: 1.2; margin-bottom: 32px;">
+                    Help build the missing<br>
+                    <span style="color: #9CAF88; font-style: italic;">social infrastructure.</span>
+                </h2>
+
+                <div style="max-width: 700px; margin: 0 auto 48px;">
+                    <p style="font-size: 20px; color: #6B7280; font-weight: 300; line-height: 1.8;">
+                        This is not a request to fund a program.<br>
+                        It is an invitation to create an ecosystem where seeking support is leadership, not weakness.
+                    </p>
+                </div>
+
+                <div
+                    style="display: flex; align-items: center; justify-content: center; gap: 32px; margin-bottom: 64px;">
+                    <a href="https://founder-mindset--hrishika1.replit.app/" target="_blank"
+                        style="background-color: #D4735E; color: white; padding: 16px 40px; border-radius: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; align-items: center; gap: 12px; text-decoration: none; cursor: pointer;">
+                        <span style="font-weight: 500; font-size: 18px; letter-spacing: 0.05em;">Start Your
+                            Journey</span>
+                        <span style="font-size: 14px;">→</span>
+                    </a>
+
+                </div>
+
+                <div style="border-top: 1px solid #D1D5DB; padding-top: 32px; width: 100%; max-width: 600px;">
+                    <div
+                        style="display: flex; justify-content: center; gap: 48px; color: #6B7280; font-weight: 300; margin-bottom: 32px; font-size: 16px;">
+                        <p style="display: flex; align-items: center; gap: 8px;">
+                            arihant@gmail.com
+                        </p>
+                        <p style="display: flex; align-items: center; gap: 8px;">
+                            +91 98109 69090
+                        </p>
+                    </div>
+                    <p
+                        style="color: #A8A29E; font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500;">
+                        Project Wendy
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Download PDF Button -->
+    <button id="downloadPdfBtn" onclick="downloadAsPDF()" style="
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        background-color: #D4735E;
+        color: white;
+        padding: 16px 24px;
+        border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(212, 115, 94, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    " onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 16px rgba(212, 115, 94, 0.5)';"
+        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 12px rgba(212, 115, 94, 0.4)';">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download PDF
+    </button>
+
+    <script>
+        function downloadAsPDF() {
+            const btn = document.getElementById('downloadPdfBtn');
+
+            // Hide the button before printing
+            btn.style.display = 'none';
+
+            // Use browser's native print dialog - user can select "Save as PDF"
+            window.print();
+
+            // Restore button after print dialog closes
+            setTimeout(() => {
+                btn.style.display = 'flex';
+            }, 500);
+        }
+    </script>
+
+    <style>
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media print {
+            #downloadPdfBtn {
+                display: none !important;
+            }
+
+            body {
+                background-color: white !important;
+                margin: 0;
+                padding: 0;
+            }
+
+            #content {
+                background-color: white !important;
+            }
+
+            .slide {
+                margin: 0 !important;
+                box-shadow: none !important;
+                page-break-after: always;
+                page-break-inside: avoid;
+                break-after: page;
+                break-inside: avoid;
+            }
+
+            .slide:last-child {
+                page-break-after: auto;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
